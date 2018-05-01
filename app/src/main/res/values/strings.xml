@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NextUp</string>
+    <string name="today_s_goals">Today\'s Goals:</string>
+    <string name="goal_1">Goal #1</string>
+    <string name="goal_2">Goal #2</string>
+    <string name="goal_3">Goal #3</string>
+    <string name="goalHolder">GOAL GOES HERE</string>
+    <string name="textview">TextView</string>
+    <string name="goal_name">GOAL Name</string>
+
+</resources>
