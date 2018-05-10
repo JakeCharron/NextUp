@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="completed" />
+        <activity android:name=".calendar" />
+        <activity android:name="todo" />
     </application>
 
 </manifest>

@@ -8,9 +8,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="267dp"
-        android:layout_height="59dp"
-        android:layout_marginLeft="4dp"
+        android:layout_width="265dp"
+        android:layout_height="60dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:text="@string/today_s_goals"
@@ -24,78 +23,106 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/goal1Field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:text="GOAL Name" />
+        app:layout_constraintTop_toBottomOf="@+id/goal1" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/goal1"
         android:layout_width="100dp"
         android:layout_height="35dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
         android:text="@string/goal_1"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/goal2"
         android:layout_width="100dp"
         android:layout_height="35dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="14dp"
         android:text="@string/goal_2"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/goal1Field" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/goal3"
         android:layout_width="100dp"
         android:layout_height="35dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="14dp"
         android:text="@string/goal_3"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/goal2Field" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/goal2Field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/goal_name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/goal2" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/goal3Field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/goal_name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/goal3" />
+
+    <Button
+        android:id="@+id/plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="18dp"
+        android:width="105dp"
+        android:text="@string/planner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/comp"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="18dp"
+        android:width="110dp"
+        android:text="@string/completed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/planner"
+        app:layout_constraintStart_toEndOf="@+id/comp" />
 
 </android.support.constraint.ConstraintLayout>
