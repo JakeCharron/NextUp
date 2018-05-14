@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
-    @Override
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +19,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate: Starting Screen");
         Button todoB = findViewById(R.id.todo);
+        Button planB = findViewById(R.id.plan);
+        Button completeB = findViewById(R.id.comp);
+
         todoB.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) { startActivity(new Intent(MainActivity.this, todo.class));            }
-        });
+            public void onClick(View v) {startActivity(new Intent(MainActivity.this, todo.class));}});
+        planB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {startActivity(new Intent(MainActivity.this, calendar.class));}});
+        completeB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {startActivity(new Intent(MainActivity.this, completed.class));}});
+
     }
 }
 

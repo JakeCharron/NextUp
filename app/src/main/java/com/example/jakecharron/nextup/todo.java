@@ -13,6 +13,9 @@ public class todo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.todo);
 
-
+        Button home = findViewById(R.id.todoHome);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { startActivity(new Intent(todo.this, MainActivity.class)); }});
     }
 }
